@@ -14,7 +14,7 @@
 
 // document.write(answers);
 
-// const category=('toys');
-// console.log('привет '+ category)
+const category=('toys');
+console.log('привет '+ category)
 
 
