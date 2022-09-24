@@ -117,3 +117,20 @@
                 
 //     }
 
+
+// let num=20;
+// function showFirstMessage(text){
+//     console.log(text);
+//    num=10;
+// }
+
+// showFirstMessage('hello');
+// console.log(num);
+
+
+
+function spans(a,b){
+    return(a+b);
+
+}
+ console.log(spans(13,79));
