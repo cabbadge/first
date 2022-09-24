@@ -17,22 +17,35 @@
 // const category=('toys');
 // console.log('привет '+ category);
 
-const namberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
+// const namberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
 
-const personal = {
-    count: namberFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat: false
-};
+// const personal = {
+//     count: namberFilms,
+//     movies:{},
+//     actors:{},
+//     genres:[],
+//     privat: false
+// };
 
-const   a= prompt('Один из последних посмотренных фильмов?', ''),
-        b= prompt('На сколько оцените его?', '');
-        // c= prompt('Один из последних посмотренных фильмов?', ''),
-        // d= prompt('На сколько оцените его?', '');
+// const   a= prompt('Один из последних посмотренных фильмов?', ''),
+//         b= prompt('На сколько оцените его?', '');
+//         c= prompt('Один из последних посмотренных фильмов?', ''),
+//         d= prompt('На сколько оцените его?', '');
 
-    personal.movies[a] = b; 
-    // personal.movies[c] = d; 
+//     personal.movies[a] = b; 
+//     // personal.movies[c] = d; 
 
-    console.log(personal);
+//     console.log(personal);
+
+num =78;
+switch(num){
+    case 40:
+    console.log('Error');
+    break;
+    case 60:
+        console.log('Error');
+        break;
+    case 78:
+    console.log('okey');
+    break;
+}
