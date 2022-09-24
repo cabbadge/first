@@ -63,6 +63,7 @@
     // }
     // while (num<=55);
 
+
 // for(let i = 1; i<10; i++){
 //     if(i===6){
 //         // break;
@@ -70,4 +71,49 @@
 //     }
 //     console.log(i);
 // }
+
+
+
+
+
+
+
+//  const namberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
+
+//     const personal = {
+//         count: namberFilms,
+//         movies:{},
+//         actors:{},
+//         genres:[],
+//         privat: false
+//     };
+
+    
+//     console.log(personal);
+
+//     if (personal.count<10){
+//         console.log("Нуб");
+//     } else if(personal =>10 && personal.count <30){
+//         console.log("Нормально нормально");
+//     }
+//     else if(personal.count > 30){
+//         console.log("Ты киноман");
+//     } else{
+//         console.log("Произошла ошибка");
+//     }
+
+//     for(let i=0; i<2;i++){
+//         const   a= prompt('Один из последних посмотренных фильмов?', ''),
+//                 b= prompt('На сколько оцените его?', '');
+
+//             if(a != null && b !=null && a !=''  && b !='' && a.length<50){
+//                 personal.movies[a]=b;
+//                 console.log('Да');
+//             } else{
+//                 console.log('Error');
+//                 i--;
+//             }
+
+                
+//     }
 
