@@ -37,15 +37,37 @@
 
 //     console.log(personal);
 
-num =78;
-switch(num){
-    case 40:
-    console.log('Error');
-    break;
-    case 60:
-        console.log('Error');
-        break;
-    case 78:
-    console.log('okey');
-    break;
-}
+// num =78;
+// switch(num){
+//     case 40:
+//     console.log('Error');
+//     break;
+//     case 60:
+//         console.log('Error');
+//         break;
+//     case 78:
+//     console.log('okey');
+//     break;
+// }
+
+    // let num= 50;
+
+    // while (num <= 55){
+    //     console.log(num);
+    //    num++;
+    // }
+
+    // do{
+    //     console.log(num);
+    //    num++;
+    // }
+    // while (num<=55);
+
+// for(let i = 1; i<10; i++){
+//     if(i===6){
+//         // break;
+//         continue;
+//     }
+//     console.log(i);
+// }
+
