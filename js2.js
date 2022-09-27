@@ -1,5 +1,5 @@
 
-'use strict';
+    'use strict';
 
 // let number = 5;
 //  const leftBorserWith =1;
@@ -119,7 +119,6 @@
  let numberFilms;
 
  function start(){
-    numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
 
     while(numberFilms ==''|| numberFilms==null|| isNaN(numberFilms) ){
         numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
@@ -151,7 +150,7 @@
             console.log("Произошла ошибка");
         }
     }
-    // personalLevel();
+    personalLevel();
 
     function remeberfimlms(){
         for(let i=0; i<2;i++){
@@ -167,7 +166,7 @@
                 }
         }
     }
-    // remeberfimlms();
+    remeberfimlms();
 
     function showMyDB(hidden){
         if(!hidden){
