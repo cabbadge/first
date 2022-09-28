@@ -116,68 +116,100 @@
 
 
 
- let numberFilms;
+//  let numberFilms;
 
- function start(){
+//  function start(){
 
-    while(numberFilms ==''|| numberFilms==null|| isNaN(numberFilms) ){
-        numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
-    }
- }
- start();
+//     while(numberFilms ==''|| numberFilms==null|| isNaN(numberFilms) ){
+//         numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
+//     }
+//  }
+//  start();
 
-    const personal = {
-        count: numberFilms,
-        movies:{},
-        actors:{},
-        genres:[],
-        privat: false
-    };
+//     const personal = {
+//         count: numberFilms,
+//         movies:{},
+//         actors:{},
+//         genres:[],
+//         privat: false
+//     };
 
     
 
-    function personalLevel(){
-        console.log(personal);
+//     function personalLevel(){
+//         console.log(personal);
 
-        if (personal.count<10){
-            console.log("Нуб");
-        } else if(personal =>10 && personal.count <30){
-            console.log("Нормально нормально");
-        }
-        else if(personal.count > 30){
-            console.log("Ты киноман");
-        } else{
-            console.log("Произошла ошибка");
-        }
-    }
-    // personalLevel();
+//         if (personal.count<10){
+//             console.log("Нуб");
+//         } else if(personal =>10 && personal.count <30){
+//             console.log("Нормально нормально");
+//         }
+//         else if(personal.count > 30){
+//             console.log("Ты киноман");
+//         } else{
+//             console.log("Произошла ошибка");
+//         }
+//     }
+//     // personalLevel();
 
-    function remeberfimlms(){
-        for(let i=0; i<2;i++){
-            const   a= prompt('Один из последних посмотренных фильмов?', ''),
-                    b= prompt('На сколько оцените его?', '');
+//     function remeberfimlms(){
+//         for(let i=0; i<2;i++){
+//             const   a= prompt('Один из последних посмотренных фильмов?', ''),
+//                     b= prompt('На сколько оцените его?', '');
     
-                if(a != null && b !=null && a !=''  && b !='' && a.length<50){
-                    personal.movies[a]=b;
-                    console.log('Да');
-                } else{
-                    console.log('Error');
-                    i--;
-                }
-        }
-    }
-    // remeberfimlms();
+//                 if(a != null && b !=null && a !=''  && b !='' && a.length<50){
+//                     personal.movies[a]=b;
+//                     console.log('Да');
+//                 } else{
+//                     console.log('Error');
+//                     i--;
+//                 }
+//         }
+//     }
+//     // remeberfimlms();
 
-    function showMyDB(hidden){
-        if(!hidden){
-            console.log(personal);
-        }
-    }
-    showMyDB(personal.privat);
+//     function showMyDB(hidden){
+//         if(!hidden){
+//             console.log(personal);
+//         }
+//     }
+//     showMyDB(personal.privat);
 
-    function writeYourGenres(){
-        for (let i=1; i<=3; i++){
-            personal.genres[i-1]=prompt(`Ваш любимый жанр под номером ${i}`);
-        }
+//     function writeYourGenres(){
+//         for (let i=1; i<=3; i++){
+//             personal.genres[i-1]=prompt(`Ваш любимый жанр под номером ${i}`);
+//         }
+//     }
+//     writeYourGenres();
+
+// function learnjs(lang, callback){
+//     console.log(`Я учу:${lang}`);
+//     callback();
+
+// }
+// function done() {
+//     console.log('Я прошел урок!');
+// }
+// learnjs('Javascript', done);
+
+
+
+const options={
+    name:'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
     }
-    writeYourGenres();
+};
+// delete options.name;
+// console.log(options);
+
+for (let key in options){
+    if( typeof(options[key])){
+        
+    }
+    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+
+}
