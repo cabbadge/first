@@ -150,7 +150,7 @@
             console.log("Произошла ошибка");
         }
     }
-    personalLevel();
+    // personalLevel();
 
     function remeberfimlms(){
         for(let i=0; i<2;i++){
@@ -166,7 +166,7 @@
                 }
         }
     }
-    remeberfimlms();
+    // remeberfimlms();
 
     function showMyDB(hidden){
         if(!hidden){
@@ -176,6 +176,8 @@
     showMyDB(personal.privat);
 
     function writeYourGenres(){
-
+        for (let i=1; i<=3; i++){
+            personal.genres[i-1]=prompt(`Ваш любимый жанр под номером ${i}`);
+        }
     }
-    
+    writeYourGenres();
