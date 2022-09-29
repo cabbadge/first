@@ -1,5 +1,4 @@
-
-    'use strict';
+"use strict";
 
 // let number = 5;
 //  const leftBorserWith =1;
@@ -157,7 +156,7 @@
 //             const   a= prompt('Один из последних посмотренных фильмов?', ''),
 //                     b= prompt('На сколько оцените его?', '');
     
-//                 if(a != null && b !=null && a !=''  && b !='' && a.length<50){
+//                if(a != null && b !=null && a !=''  && b !='' && a.length<50){
 //                     personal.movies[a]=b;
 //                     console.log('Да');
 //                 } else{
@@ -194,22 +193,111 @@
 
 
 
-const options={
-    name:'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    }
-};
-// delete options.name;
-// console.log(options);
+// const options={
+//     name:'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     }
+// };
+// // delete options.name;
+// // console.log(options);
 
-for (let key in options){
-    if( typeof(options[key])){
-        
-    }
-    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+// for (let key in options){
+//     if( typeof(options[key])){
 
-}
+//     }
+//     console.log(`Свойство ${key} имеет значение ${options[key]}`);
+
+// }
+
+
+
+// let arr =[1,45,25,78];
+// // arr.shift();
+// // arr.push();
+// // arr.pop();
+// // for (let i=0; i<=arr.length; i++){
+// //     console.log(arr[i]);
+// // }
+// // for(let value of arr){
+// //     console.log(value);
+// // }
+
+// arr.forEach(function( item,i,arr){
+//     console.log(`${i} :${item} внутри массива ${arr}`);
+// });
+
+
+// const str= prompt('Массивы');
+// const massiv= str.split(', ');
+
+// console.log(massiv.join('; '));
+
+// function copy(mailObj){
+//     let objCopy={};
+//     let key;
+//     for (key in mailObj){
+//         objCopy[key]=mailObj[key];
+//     }
+//     return objCopy;
+// }
+
+// const numbers ={
+//     a:2,
+//     s:4,
+//     q:{
+//         w:8,
+//         e:10
+//     }
+// };
+// const newNumber = copy(numbers);
+// newNumber.a=11;
+// newNumber.q.w=7;
+// console.log(newNumber);
+// console.log(numbers);
+
+// const add= {
+//     d:17,
+//     t:20
+// }
+
+// const clone = Object.assign({}, add);
+// clone.d=30;
+// console.log(add);
+// console.log(clone);
+
+// const oldArray =[`a`,`d`,`c`];
+// const newArray= oldArray.slice();
+// newArray[1]=`fsdjg`;
+// console.log(oldArray);
+// console.log(newArray);
+
+// const video = [`youtube`, 'vimeo', 'rutube'],
+//         blogs = ['wordress', 'livejournal', 'blogger'],
+//         internet = [...video,...blogs, 'vk'];
+
+// console.log(internet);
+
+// function log(a,b,c){
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+
+// const num =[2,5,7];
+// log(...num);
+
+// const array=['a','b'];
+
+// const newAarray = [...array];
+// console.log(newAarray);
+
+// const q = {
+//     one:1,
+//     two:2
+// };
+
+// const newObj = {...q};
