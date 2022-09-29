@@ -119,6 +119,7 @@
 //  let numberFilms;
 
 //  function start(){
+//     numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
 
 //     while(numberFilms ==''|| numberFilms==null|| isNaN(numberFilms) ){
 //         numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
@@ -150,7 +151,7 @@
 //             console.log("Произошла ошибка");
 //         }
 //     }
-//     // personalLevel();
+//     personalLevel();
 
 //     function remeberfimlms(){
 //         for(let i=0; i<2;i++){
@@ -180,7 +181,9 @@
 //             personal.genres[i-1]=prompt(`Ваш любимый жанр под номером ${i}`);
 //         }
 //     }
-//     writeYourGenres();
+    // writeYourGenres();
+
+
 
 // function learnjs(lang, callback){
 //     console.log(`Я учу:${lang}`);
@@ -194,22 +197,32 @@
 
 
 
-const options={
-    name:'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    }
-};
-// delete options.name;
+// const options={
+//     name:'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function(){
+//         console.log(`test`);
+//     }
+// };
+// options.makeTest();
+// // delete options.name;
 // console.log(options);
+// let caunter=0;
+// for (let key in options){
+    
+//     if( typeof(options[key]) ===`object`){
+//         for (let i in options[key]){
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//         }
+//     } else{
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//     }
 
-for (let key in options){
-    if( typeof(options[key])){
-        
-    }
-    console.log(`Свойство ${key} имеет значение ${options[key]}`);
+// }
 
-}
+// console.log(Object.keys(options).length);
