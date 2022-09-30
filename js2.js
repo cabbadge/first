@@ -115,74 +115,6 @@
 
 
 
-//  let numberFilms;
-
-//  function start(){
-//     numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
-
-//     while(numberFilms ==''|| numberFilms==null|| isNaN(numberFilms) ){
-//         numberFilms=+prompt("Сколько фильмов вы уже посмотрели?", '');
-//     }
-//  }
-//  start();
-
-//     const personal = {
-//         count: numberFilms,
-//         movies:{},
-//         actors:{},
-//         genres:[],
-//         privat: false
-//     };
-
-    
-
-//     function personalLevel(){
-//         console.log(personal);
-
-//         if (personal.count<10){
-//             console.log("Нуб");
-//         } else if(personal =>10 && personal.count <30){
-//             console.log("Нормально нормально");
-//         }
-//         else if(personal.count > 30){
-//             console.log("Ты киноман");
-//         } else{
-//             console.log("Произошла ошибка");
-//         }
-//     }
-//     personalLevel();
-
-//     function remeberfimlms(){
-//         for(let i=0; i<2;i++){
-//             const   a= prompt('Один из последних посмотренных фильмов?', ''),
-//                     b= prompt('На сколько оцените его?', '');
-    
-//                if(a != null && b !=null && a !=''  && b !='' && a.length<50){
-//                     personal.movies[a]=b;
-//                     console.log('Да');
-//                 } else{
-//                     console.log('Error');
-//                     i--;
-//                 }
-//         }
-//     }
-//     // remeberfimlms();
-
-//     function showMyDB(hidden){
-//         if(!hidden){
-//             console.log(personal);
-//         }
-//     }
-//     showMyDB(personal.privat);
-
-//     function writeYourGenres(){
-//         for (let i=1; i<=3; i++){
-//             personal.genres[i-1]=prompt(`Ваш любимый жанр под номером ${i}`);
-//         }
-//     }
-    // writeYourGenres();
-
-
 
 // function learnjs(lang, callback){
 //     console.log(`Я учу:${lang}`);
@@ -327,4 +259,102 @@
 // };
 
 // const newObj = {...q};
+
+
+
+// const soldat = {
+//     health:400,
+//     armor:100,
+//     say: function(){
+//         console.log('Hello');
+//     }
+// };
+// const joit =Object.create(soldat);
+// // joit.__proto__ = soldat;
+// // Object.setPrototypeOf(joit, soldat);
+// // console.log(joit.armor);
+// joit.say();
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const personal = {
+        count: 0,
+        movies:{},
+        actors:{},
+        genres:[],
+        privat: false,
+        start: function(){
+            personal.count=+prompt("Сколько фильмов вы уже посмотрели?", '');
+            while(personal.count ==''||personal.count==null||isNaN(personal.count))
+            {
+                personal.count=+prompt("Сколько фильмов вы уже посмотрели?",'');
+            }
+        },
+        remeberfimlms: function (){
+            for(let i=0; i<2;i++){
+                const   a= prompt('Один из последних посмотренных фильмов?',''),
+                
+                        b= prompt('На сколько оцените его?', '');
+        
+                   if(a != null && b !=null && a !=''  && b !='' && a.length<50)
+                   {
+                        personal.movies[a]=b;
+                        console.log('Да');
+                    } else{
+                        console.log('Error');
+                        i--;
+                    }
+            }
+        },
+        personalLevel: function(){
+            console.log(personal);
+    
+            if (personal.count<10){
+                console.log("Нуб");
+            } else if(personal =>10 && personal.count <30){
+                console.log("Нормально нормально");
+            }
+            else if(personal.count > 30){
+                console.log("Ты киноман");
+            } else{
+                console.log("Произошла ошибка");
+            }
+        },
+        showMyDB: function(hidden){
+            if(!hidden){
+                console.log(personal);
+            }
+        },
+        toggleVisibleMyDB: function(){
+            if(personal.privat){
+                personal.privat=false;
+            } else{
+                personal.privat=true;
+            }
+        },
+        writeYourGenres(){
+            for (let i=1; i<=3; i++){
+                let genre=prompt(`Ваш любимый жанр под номером ${i}`);
+                personal.genres[i-1]=genre;
+                if(genre != null  && genre !=''  && genre.length<50){
+                    console.log('Да');
+                }else{
+                    console.log('Error');
+                    i--;
+                }
+            }
+        }
+
+    };
+
 
