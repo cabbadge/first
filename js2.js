@@ -203,7 +203,6 @@
 //     colors: {
 //         border: 'black',
 //         bg: 'red'
-<<<<<<< HEAD
 //     },
 //     makeTest: function(){
 //         console.log(`test`);
@@ -226,7 +225,7 @@
 // }
 
 // console.log(Object.keys(options).length);
-=======
+
 //     }
 // };
 // // delete options.name;
@@ -328,4 +327,4 @@
 // };
 
 // const newObj = {...q};
->>>>>>> 84c0ba9622b29a31af055bc98d69ec8136c5961d
+
